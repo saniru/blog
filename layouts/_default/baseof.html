@@ -30,7 +30,8 @@
             {{- else -}}
             <link rel="canonical" href="{{ .Permalink }}">
             {{- end -}}
-            <link rel="stylesheet" href='{{absURL "iconfont/tabler-icons.min.css"}}'>
+            {{ $iconsurl :=  absURL "iconfont/tabler-icons.min.css" }}
+            <link rel="stylesheet" href="{{ $iconsurl }}">
             <title>{{ block "title" . }}
                 {{ .Site.Title }}
                 {{ end }}</title>
