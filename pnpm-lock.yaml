@@ -20,13 +20,13 @@ importers:
       '@tabler/icons-webfont':
         specifier: ^3.12.0
         version: 3.12.0
-    devDependencies:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.41)
       cssnano:
         specifier: ^7.0.5
         version: 7.0.5(postcss@8.4.41)
+    devDependencies:
       html-validate:
         specifier: ^8.21.0
         version: 8.21.0
