@@ -33,8 +33,8 @@ Description= "Personal blog"
     weight = 2
 
 [params.social]
-  linkedin = "https://linkedin.com"
-  instagram = "https://instagram.com"
+  linkedin = "https://www.linkedin.com/in/santiago-nicolas-ruberto-2bb0b4191/"
+  github = "https://github.com/saniru"
 
 [module]
   [[module.mounts]]
