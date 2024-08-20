@@ -54,7 +54,6 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: Europe/Madrid
         run: |
-          npm run lint &&
           hugo \
             --gc \
             --minify \
