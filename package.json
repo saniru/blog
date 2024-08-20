@@ -5,7 +5,9 @@
     "@fontsource/russo-one": "^5.0.21",
     "@tabler/icons-webfont": "^3.12.0",
     "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.5"
+    "cssnano": "^7.0.5",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0"
   },
   "scripts": {
     "serve": "hugo server",
@@ -15,8 +17,6 @@
     "spellcheck": "test \"$(hunspell -l -i UTF-8 -d es_ES,en_US -p ~/.config/enchant/es_ES.dic -H content/**/* | sort | uniq)\" = \"\""
   },
   "devDependencies": {
-    "html-validate": "^8.21.0",
-    "postcss": "^8.4.41",
-    "postcss-cli": "^11.0.0"
+    "html-validate": "^8.21.0"
   }
 }

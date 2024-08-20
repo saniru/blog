@@ -26,16 +26,16 @@ importers:
       cssnano:
         specifier: ^7.0.5
         version: 7.0.5(postcss@8.4.41)
-    devDependencies:
-      html-validate:
-        specifier: ^8.21.0
-        version: 8.21.0
       postcss:
         specifier: ^8.4.41
         version: 8.4.41
       postcss-cli:
         specifier: ^11.0.0
         version: 11.0.0(postcss@8.4.41)
+    devDependencies:
+      html-validate:
+        specifier: ^8.21.0
+        version: 8.21.0
 
 packages:
 
