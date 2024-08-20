@@ -1,0 +1,30 @@
+{{ define "title" }}
+{{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    {{ partial "article-info" . }}
+    {{ .Content }}
+    {{ partial "article-tax" . }}
+</article>
+<div class="post-nav">
+    {{ if .Prev }}
+        <div class="prev-post">
+            <a class="post-nav-link" href="{{ .Prev.Permalink }}">
+                <p>Previous post:</p>
+                <p>{{ .Prev.Title }}</p>
+            </a>
+        </div>
+    {{ end }}
+
+    {{ if .Next }}
+        <div class="next-post">
+            <a class="post-nav-link" href="{{ .Next.Permalink }}">
+                <p>Next post:</p>
+                <p>{{ .Next.Title }}</p>
+            </a>
+        </div>
+    {{ end }}
+</div>
+{{ end }}

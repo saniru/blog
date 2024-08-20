@@ -1,0 +1,23 @@
+#+TITLE: I had a problem with org roam
+#+DATE: 2024-03-19
+#+HUGO_TAGS: emacs org org-roam
+* I had a problem with ~org-roam~
+:PROPERTIES:
+:EXPORT_FILE_NAME: org-roam-problem.en.md
+:EXPORT_LANGUAGE: en
+:END:
+I had a problem when using ~org-roam~. More specifically, I would have a timeout whenever I ran any command that needed a database sync. After a process of experimentation, I found a solution:
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-eol-conversion nil)
+#+END_SRC
+Turns out, this made it work! The newlines were different between the internal command buffer and the actual Emacs newlines and it just died instantly because it got messed up.
+* Tuve un problema con ~org-roam~
+:PROPERTIES:
+:EXPORT_FILE_NAME: org-roam-problem.es.md
+:EXPORT_LANGUAGE: es
+:END:
+Tenía un problema usando ~org-roam~. Más específicamente, me pasaba un timeout cuando corriera un comando que requiriera sincronización con la base de datos. Después de un proceso de experimentación, me encontré con una solución:
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-eol-conversion nil)
+#+END_SRC
+Resulta que esto lo hizo funcionar! Las lineas nuevas eran distintas entre el búfer interno de comandos y las lineas nuevas de Emacs y se moría instantáneamente porque se cago todo.

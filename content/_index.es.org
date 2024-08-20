@@ -1,0 +1,16 @@
+#+TITLE: ¡Hola!
+Soy Santiago Nicolás Ruberto, y aquí escribo lo que me parezca útil publicar para mí y para otras personas.
+* Sobre mí
+Soy un Desarrollador de Software con un Grado en Ingeniería Telemática. Siempre he tenido pasión por crear herramientas y aplicaciones para hacerle la vida más fácil a mi y a otras personas. Este enfoque me ha llevado por un camino atravesando varias facetas de la programación, desde programación embebida hasta desarrollo web.
+
+Empecé haciendo mods y pequeñas aplicaciones en mi niñez y adolescencia, y luego realizando proyectos más grandes mientras estaba estudiando la carrera. Hasta ahora, esto me ha llevado a trabajar en múltiples proyectos durante estos últimos años:
+
+- Trabajar para una startup local en el desarrollo del firmware de un cargador de vehículo eléctrico propietario.
+- Ayudando a dos de mis compañeros de clase en el desarrollo de una tienda virtual basada en /WordPress/-/WooCommerce/, trabajando y depurando todo el stack del sitio.
+- Mi Trabajo de Fin de Grado, que involucró crear un sistema distribuido, escalable para [[https://es.wikipedia.org/wiki/Web_scraping][raspar]] un portal de empleos y recuperando información de cientos de ofertas de trabajos de una manera estructurada. Esta información luego se usará para un estudio académico sobre los beneficios no-económicos de esas ofertas de trabajo.
+* [[file:/es/posts][{{<i18n posts>}}]]
+Opiniones, observaciones... cosas de blog.
+* [[file:/es/notes][{{<i18n notes>}}]]
+Notas que hago sobre algún problema que haya resuelto o investigado. Las publico por si resulta que son útiles para alguien más.
+* [[file:/es/projects][{{<i18n projects>}}]]
+Escritos sobre proyectos que este desarrollando o colaborando.

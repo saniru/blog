@@ -1,0 +1,7 @@
+{{ if .Site.Params.social }}
+    <ul class="social-links">
+        {{ range $platform, $link := .Site.Params.social }}
+            <li><a href="{{ $link }}" aria-label="{{ $platform }}" target="_blank"><i class="ti ti-brand-{{ $platform }}"></i></a></li>
+        {{ end }}
+    </ul>
+{{ end }}

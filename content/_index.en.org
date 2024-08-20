@@ -1,0 +1,19 @@
+#+TITLE: Hello!
+I'm Santiago Nicolás Ruberto, and this is where I publish stuff that seems useful for me and other people.
+* About me
+I'm a Software Developer with a degree in Telematics Engineering. I've always been passionate about creating tools and applications to make life easier for myself and others. This focus has led me on a path through many facets of programming, from embedded to web development.
+
+I started out making mods and small applications as a kid and teenager, and then making bigger projects in college while I was studying. So far, this has led me to several different projects I've done over these last few years:
+
+- Working for a local startup on the firmware of a proprietary electric vehicle charging platform, basically leading and formalizing the development process.
+- Helping out two of my classmates in development of a /WordPress/-/WooCommerce/ based storefront, working on and debugging the entire stack of the site.
+- My final degree project[fn:1], which involved creating a distributed, scalable system for [[https://en.wikipedia.org/wiki/Web_scraping][scraping]] a job portal and retrieving data from hundreds of job offers in a structured way. This data would then be used in an academic study on non-economic benefits of those job offers.
+
+* [[file:/en/posts][{{<i18n posts>}}]]
+Opinions, observations... blog stuff.
+* [[file:/en/notes][{{<i18n notes>}}]]
+Notes that I write down about some problem that I have resolved or investigated in the past.
+* [[file:/en/projects][{{<i18n projects>}}]]
+Writings about projects I have developed or collaborated with.
+* Footnotes
+[fn:1] "Trabajo de Fin de Grado" in Spanish. I've heard this referred to as a thesis before, but I'm not sure on the exact terminology yet.

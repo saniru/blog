@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <h1>
+        {{ $translation := i18n (lower .Title) }}
+        {{ if and (not (eq $translation "")) (ne (printf "[i18n] %s" (lower .Title)) $translation) }}
+            {{ $translation }}
+        {{ else }}
+            {{ .Title }}
+        {{ end }}
+    </h1>
+    {{ range .Pages }}
+        {{ partial "article-card" . }}
+    {{ end }}
+{{ end }}

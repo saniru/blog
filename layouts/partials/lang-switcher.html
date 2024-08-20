@@ -1,0 +1,9 @@
+{{ if .Site.IsMultiLingual }}
+{{ with .Translations }}
+{{ range . }}
+    {{ $langName := or .Language.LanguageName .Language.Lang }}
+    {{ $langCode := or .Language.LanguageCode .Language.Lang }}
+    <a href="{{ .RelPermalink }}" hreflang="{{ $langCode }}"><i class="ti ti-language"></i>({{ $langCode }}) </a>
+{{ end }}
+{{ end }}
+{{ end }}

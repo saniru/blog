@@ -1,0 +1,12 @@
+{{ if .Params.tags }}
+<div class="post-tags">
+    {{ $thash := md5 .Slug }}
+    {{ $tagID := printf "tag-label-%s" $thash }}
+    <strong id="{{ $tagID }}">Tags:</strong>
+    <ul aria-labelledby="{{ $tagID }}" class="horizontal-list">
+        {{ range .Params.tags }}
+        <li><a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

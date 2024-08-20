@@ -1,0 +1,5 @@
+<div class="article-info">
+    <i aria-label="{{ i18n "published"}}" class="ti ti-calendar-due"></i>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006/01/02" }}</time> <span>·</span>
+    <i aria-label="{{ i18n " word-count" }}" class="ti ti-brackets-contain"></i><span>{{.FuzzyWordCount}}<span>&#126;</span></span>
+</div>

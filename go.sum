@@ -1,0 +1,10 @@
+github.com/hugomods/seo/modules/base v0.1.1 h1:63exSBQ+CuyN+GEpbCQgTWgHcuiHia2Ox7nwbhsWSDU=
+github.com/hugomods/seo/modules/base v0.1.1/go.mod h1:qfm1Vga0eGxL+Szgz8Jopm+NtJ5PGov2a2dikTg1qSg=
+github.com/hugomods/seo/modules/json-ld v0.2.0 h1:2tp2KiQtAtD9fj5nH+RcSRVR1Y/8efybMcAcZB+ados=
+github.com/hugomods/seo/modules/json-ld v0.2.0/go.mod h1:25NhBkb+Y0v56QVYPoCqp3R9gsuWc0oXRMeWQcUaW+s=
+github.com/hugomods/seo/modules/open-graph v0.1.0 h1:Whveal1j1n2xZWcAlNAd2rdfKp7Fh5apol36wLGLb54=
+github.com/hugomods/seo/modules/open-graph v0.1.0/go.mod h1:G7mXf7D1QtRN/i7A9v+cUF5P55H/QaxRqxJ8tp9fVq4=
+github.com/hugomods/seo/modules/schema v0.1.1 h1:8IuJxCOxk9pfKpCFMik5fDCX7zaFwkGoeKacnYV0sgA=
+github.com/hugomods/seo/modules/schema v0.1.1/go.mod h1:R6hRr2FIJITcMnFA/3V3dPAZgGQLNWGS7v1PLsmVRxU=
+github.com/hugomods/seo/modules/translations v0.1.0 h1:wPDuPKGx/x+otHn2HfAankKCGQxSrC3gLHhRHpNjC18=
+github.com/hugomods/seo/modules/translations v0.1.0/go.mod h1:yU2p2hk2dK86YNRU9zfoWRoCrYmrjEmf3oN7cCTbzcM=

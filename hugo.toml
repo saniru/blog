@@ -1,0 +1,75 @@
+title = 'Testing...'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+summaryLength = 20
+baseURL = "http://localhost:1313"
+math = true
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = 'tags'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+Description= "Personal blog"
+
+[minify]
+  minifyOutput = false
+
+[language]
+  [languages.en]
+    disabled = false
+    languageCode = "en-US"
+    LanguageName = "English"
+    title = "Writing..."
+    weight = 1
+  [languages.es]
+    disabled = false
+    languageCode = "es-ES"
+    LanguageName = "Spanish"
+    title = "Escribiendo..."
+    weight = 2
+
+[params.social]
+  linkedin = "https://linkedin.com"
+  instagram = "https://instagram.com"
+
+[module]
+  [[module.mounts]]
+    source = "./static"
+    target = "./static/"
+  [[module.mounts]]
+    source = "./node_modules/@tabler/icons-webfont/dist/fonts"
+    target = "./static/iconfont/fonts"
+  [[module.mounts]]
+    source = "./node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css"
+    target = "./static/iconfont/tabler-icons.min.css"
+  [[module.mounts]]
+    source = "./node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css.map"
+    target = "./static/iconfont/tabler-icons.min.css.map"
+  [[module.mounts]]
+    source = "./node_modules/@tabler/icons-webfont/dist/tabler-icons.scss"
+    target = "./static/iconfont/tabler-icons.scss"
+  [[module.mounts]]
+    source = "./node_modules/@fontsource"
+    target = "./static/css/fonts"
+[[module.imports]]
+  path = "github.com/hugomods/seo/modules/schema"
+[[module.imports]]
+  path = "github.com/hugomods/seo/modules/base"
+[[module.imports]]
+  path = "github.com/hugomods/seo/modules/open-graph"
+[[module.imports]]
+  path = "github.com/hugomods/seo/modules/translations"
+[[module.imports]]
+  path = "github.com/hugomods/seo/modules/json-ld"
+
+
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1

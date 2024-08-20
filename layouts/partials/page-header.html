@@ -1,0 +1,35 @@
+<header>
+    <nav>
+        <a id="branding" aria-label="{{ .Site.Title }}" href="{{ .Site.BaseURL }}">
+            <div id="brand">
+                {{ $image := resources.Get "images/logo.png" }}
+                {{ with $image }}
+                <img src="{{ .RelPermalink }}" alt="Image">
+                <img id="logo" src="{{ .RelPermalink }}" alt="Site logo">
+                {{ end }}
+                <p>{{ .Site.Title }}</p>
+            </div>
+        </a>
+        <ul id="spacer"></ul>
+        <div id="theme-div">
+            <script>const theme = window.localStorage.getItem("theme") ?? "light";
+                themeSwitch(theme);</script>
+            <button type="button" aria-label="Switch Theme" id="my-theme-toggle" onclick="showSubmenu('theme-submenu')"><i class="ti ti-moon-stars"></i></button>
+            <ul id="theme-submenu" class="hidden">
+                <li><button type="button" onclick="themeSwitch('os-default')">{{ i18n "os-default" }}</button></li>
+                <li><button type="button" onclick="themeSwitch('light')">{{ i18n "light" }}</button></li>
+                <li><button type="button" onclick="themeSwitch('dark')">{{ i18n "dark" }}</button></li>
+            </ul>
+        </div>
+        <div label="Switch Language" id="langswitcher">{{ partial "lang-switcher" . }}</div>
+        <button type="button" onclick="document.getElementById('navigation').classList.toggle('responsive');" id="rightflex" class="only-shallow">
+            <span id="menu">
+                {{ readFile "static/Hamburger_icon.svg" | safeHTML }}
+            </span></button>
+        <ul id="navigation">
+            {{ range .Site.Sections }}
+            <li class=""><h5><a href="{{ .RelPermalink }}">{{ i18n .Section }}</a></h5></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,10 @@
+<article>
+    {{ $langCode := or .Language.LanguageCode .Language.Lang }}
+    <h2><a href="{{ .RelPermalink }}">
+        {{ .Title }}
+    </a></h2>
+    <a style="color:var(--color-text);border:0;background-color:inherit;"
+       href="{{ .RelPermalink }}">{{ .Render "summary" }}</a>
+    {{ partial "article-info" . }}
+    {{ partial "article-tax" . }}
+</article>

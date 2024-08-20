@@ -1,0 +1,11 @@
+#+TITLE: How I killed God
+#+DATE: 2024-03-07
+#+HUGO_TAGS: religion humanity
+#+HUGO_CATEGORIES: funny
+
+I just spammed armor strip and a soma prime lul
+#+BEGIN_SRC python
+  lol=True
+  if lol:
+    print("xd")
+#+END_SRC

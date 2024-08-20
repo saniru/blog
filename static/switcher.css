@@ -1,0 +1,93 @@
+:root{
+    --base1:#16b6b3;
+    --base2:#eb6117;
+    --base3:#224f4e;
+    --base4:#7d482c;
+    --base5:#6b5143;
+    --light-text:#eee;
+    --dark-text:#111;
+}
+#theme-submenu {
+    max-width: 25rem;
+    padding: .5rem;
+    position: absolute;
+    top: var(--header-size);
+    min-width: 5rem;
+    width: max-content;
+    background-color: var(--resalte-b);
+    color:var(--header-text);
+    border: 2px solid var(--resalte);
+    flex-direction: column;
+    cursor:pointer;
+}
+#theme-submenu *, #my-theme-toggle *, #theme-submenu, #my-theme-toggle{
+    cursor:pointer;
+}
+#theme-submenu li:hover, #theme-submenu button:hover{
+    background-color: var(--resalte) !important;
+}
+#theme-submenu li {
+    height: 1em;
+    width:100%;
+    margin: 0;
+    padding:0;
+    color:var(--header-text);
+}
+#theme-div{
+    width:2em;
+    height:2em;
+    font-size:2em;
+}
+#theme-div button{
+    width:100%;
+    height:100%;
+    display:block;
+    color:var(--header-text);
+}
+#theme-div i{
+    font-size:2em;
+}
+.dark {
+    --primario-b:var(--base2);
+    --resalte: var(--base1);
+    --primario:var(--base4);
+    --resalte-b:var(--base3);
+    --filler:var(--base5);
+    --color-text:var(--light-text);
+    --header-text:var(--light-text);
+    --highlight-text:var(--dark-text);
+}
+@media (prefers-color-scheme:dark){
+    html:not(.light):not(.dark), .dark {
+        --primario-b:var(--base2);
+        --resalte: var(--base1);
+        --primario:var(--base4);
+        --resalte-b:var(--base3);
+        --filler:var(--base5);
+        --color-text:var(--light-text);
+        --header-text:var(--light-text);
+        --highlight-text:var(--dark-text);
+    }
+}
+.light{
+    --primario:var(--base1);
+    --resalte:var(--base4);
+    --primario-b:var(--base3);
+    --resalte-b:var(--base2);
+    --filler:var(--base5);
+    --color-text:var(--dark-text);
+    --header-text:#111;
+    --highlight-text:var(--light-text);
+}
+@media (prefers-color-scheme: light){
+    :root:not(.light):not(.dark), .light{
+        --primario:var(--base1);
+        --resalte:var(--base4);
+        --primario-b:var(--base3);
+        --resalte-b:var(--base2);
+        --filler:var(--base5);
+        --color-text:var(--dark-text);
+        --header-text:#111;
+        --highlight-text:var(--light-text);
+    }
+}
