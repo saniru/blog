@@ -1,8 +1,6 @@
 @import url('fonts/russo-one/index.css');
 @import url('fonts/rubik/index.css');
 @import url('fonts/russo-one/index.css');
-@import url('/switcher.css');
-@import url('/header.css');
 * {
     box-sizing:border-box;
 }

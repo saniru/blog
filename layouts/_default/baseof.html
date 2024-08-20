@@ -16,6 +16,12 @@
         {{ with resources.Get "css/index.css" | postCSS $cssopts }}
             <link rel="stylesheet" href="{{ .RelPermalink }}">
         {{ end }}
+        {{ with resources.Get "css/header.css" | postCSS $cssopts }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ end }}
+        {{ with resources.Get "css/switcher.css" | postCSS $cssopts }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ end }}
         {{ with resources.Get "switcher.js" }}
             <script src="{{.RelPermalink}}"></script>
             {{ end }}
